@@ -5,11 +5,7 @@ INCLUDE_DIRECTORIES(./include)
 INCLUDE_DIRECTORIES(./src)
 INCLUDE_DIRECTORIES(./src/UI)
 
-# INCLUDE_DIRECTORIES(../..)
-# INCLUDE_DIRECTORIES(../../include)
-# INCLUDE_DIRECTORIES(../../src)
-# INCLUDE_DIRECTORIES(../../src/eigen3)
-# INCLUDE_DIRECTORIES(/usr/local/include/vcglib)
+
 SET(sketch_retopo_dir ../sketch-retopo-demo)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir})
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/include)
@@ -45,9 +41,6 @@ FIND_PACKAGE(Qt4 REQUIRED)
 # ENDIF()
 
 # mytest
-# INCLUDE_DIRECTORIES(../../src/LearningQuadrangulationsCore)
-# INCLUDE_DIRECTORIES(../../src/LearningQuadrangulationsCore/SCIP)
-# INCLUDE_DIRECTORIES(../../src/LearningQuadrangulationsCore/SCIP/soplex)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP/soplex)
