@@ -7,7 +7,6 @@ INCLUDE_DIRECTORIES(./src/UI)
 
 
 SET(sketch_retopo_dir ../sketch-retopo-demo)
-INCLUDE_DIRECTORIES(${sketch_retopo_dir})
 INCLUDE_DIRECTORIES(./include/vcglib)
 INCLUDE_DIRECTORIES(./include/vcglib/eigenlib)
 
