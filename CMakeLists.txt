@@ -6,9 +6,10 @@ INCLUDE_DIRECTORIES(./src)
 INCLUDE_DIRECTORIES(./src/UI)
 
 
-SET(sketch_retopo_dir ../sketch-retopo-demo)
-INCLUDE_DIRECTORIES(./include/vcglib)
-INCLUDE_DIRECTORIES(./include/vcglib/eigenlib)
+INCLUDE_DIRECTORIES(3rdparty/vcglib)
+INCLUDE_DIRECTORIES(3rdparty/vcglib/eigenlib)
+INCLUDE_DIRECTORIES(3rdparty/LearningQuadrangulationsCore)
+INCLUDE_DIRECTORIES(3rdparty/LearningQuadrangulationsCore/SCIP)
 
 #Qt4
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -37,10 +38,7 @@ FIND_PACKAGE(Qt4 REQUIRED)
 #   ENDIF()
 # ENDIF()
 
-# mytest
-INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore)
-INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP)
-# INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP/soplex)
+
 
 FILE(GLOB pattern_viewer_src
 	./src/main.cpp
