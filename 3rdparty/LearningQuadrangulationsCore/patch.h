@@ -878,10 +878,10 @@ namespace vcg {
                             lastVar = _boundaryIDsVec[side][edge];
                             if (_boundaryVarVec[lastVar] > 1) {
                                 ///dxy test
-                                std::cout << "going to split polychord..." << std::endl;
+                                // std::cout << "going to split polychord..." << std::endl;
                                 //              std::cout << "side: " << side << ", edge: " << edge << std::endl;
-                                std::cout << "lastVar: " << lastVar << std::endl;
-                                std::cout << "_boundaryVarVec[lastVar] = " << _boundaryVarVec[lastVar] << std::endl;
+                                // std::cout << "lastVar: " << lastVar << std::endl;
+                                // std::cout << "_boundaryVarVec[lastVar] = " << _boundaryVarVec[lastVar] << std::endl;
                                 ///
                                 vcg::tri::PolychordCollapse<PolyMeshType>::SplitPolychord(patchMesh, runPos, _boundaryVarVec[lastVar],
                                                                                           facesToUpdate, verticesToUpdate);
