@@ -10,8 +10,8 @@ SET(sketch_retopo_dir ../sketch-retopo-demo)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir})
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/include)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src)
-INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/eigen3)
 INCLUDE_DIRECTORIES(./include/vcglib)
+INCLUDE_DIRECTORIES(./include/vcglib/eigenlib)
 
 #Qt4
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
