@@ -11,7 +11,7 @@ INCLUDE_DIRECTORIES(${sketch_retopo_dir})
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/include)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/eigen3)
-INCLUDE_DIRECTORIES(/usr/local/include/vcglib)
+INCLUDE_DIRECTORIES(./include/vcglib)
 
 #Qt4
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -54,15 +54,13 @@ FILE(GLOB pattern_viewer_src
 
 
 # linker settings
-  ADD_EXECUTABLE(PatternViewer
-    ${pattern_viewer_src})
-  FIND_LIBRARY(SQLITE3_LIB sqlite3)
-  # FIND_LIBRARY(GLFW3_LIB glfw3)
-  # FIND_LIBRARY(GLEW_LIB GLEW)
-  TARGET_LINK_LIBRARIES(PatternViewer
-    # learnquad
-    ${SQLITE3_LIB}
-    Qt4::QtGui
-    Qt4::QtCore
-  )
+ADD_EXECUTABLE(PatternViewer
+  ${pattern_viewer_src})
+FIND_LIBRARY(SQLITE3_LIB sqlite3)
+TARGET_LINK_LIBRARIES(PatternViewer
+  # learnquad
+  ${SQLITE3_LIB}
+  Qt4::QtGui
+  Qt4::QtCore
+)
   
