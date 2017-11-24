@@ -1,7 +1,6 @@
 #include <QApplication>
+#include <iostream>
 #include "window.h"
-
-
 #include "db_test.h"
 
 
@@ -11,7 +10,11 @@ int main(int argc, char* argv[]){
     
     
     //db init
-    string dbFile = "/Users/dohoney/patches.db";
+    if (argc != 2) {
+        std::cout << "Usage: ./PatternViewer [database_file]" << std::endl;
+        return 0;
+    }
+    string dbFile = argv[1];
     
     PatchDBServer<PolyMesh> dbserver;
     
