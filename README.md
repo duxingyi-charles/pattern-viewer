@@ -11,8 +11,7 @@ Patterns can be browsed by the number of sides and their index in the database. 
 This program is mainly based on the Sketch Retopo software. You need to agree to the [software License](http://igl.ethz.ch/projects/sketch-retopo/sketch-retopo-license.html) before using this program.
 
 # Screenshot
-![screenshot](https://github.com/dohoney/pattern-viewer/raw/master/resources/screenshot.png)
-
+<img width="606" height="472" src="https://github.com/dohoney/pattern-viewer/raw/master/resources/screenshot.png">
 
 # Usage
 First download the pattern database from the [official site](http://igl.ethz.ch/projects/ddq/).
