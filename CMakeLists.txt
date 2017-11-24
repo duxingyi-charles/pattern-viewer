@@ -8,7 +8,6 @@ INCLUDE_DIRECTORIES(./src/UI)
 
 SET(sketch_retopo_dir ../sketch-retopo-demo)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir})
-INCLUDE_DIRECTORIES(${sketch_retopo_dir}/include)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src)
 INCLUDE_DIRECTORIES(./include/vcglib)
 INCLUDE_DIRECTORIES(./include/vcglib/eigenlib)
@@ -43,7 +42,7 @@ FIND_PACKAGE(Qt4 REQUIRED)
 # mytest
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP)
-INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP/soplex)
+# INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP/soplex)
 
 FILE(GLOB pattern_viewer_src
 	./src/main.cpp
