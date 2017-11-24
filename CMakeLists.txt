@@ -49,8 +49,6 @@ FILE(GLOB pattern_viewer_src
 	./src/main.cpp
   ./src/UI/*.h
   ./src/UI/*.cpp
-  #for my_collapse
-  /usr/local/include/vcglib/wrap/ply/plylib.cpp
 )
 
 
