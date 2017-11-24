@@ -1,9 +1,9 @@
 PROJECT(PatternViewer)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
-INCLUDE_DIRECTORIES(./include)
-INCLUDE_DIRECTORIES(./src)
-INCLUDE_DIRECTORIES(./src/UI)
+INCLUDE_DIRECTORIES(include)
+INCLUDE_DIRECTORIES(src)
+INCLUDE_DIRECTORIES(src/UI)
 
 
 INCLUDE_DIRECTORIES(3rdparty/vcglib)
@@ -30,7 +30,7 @@ FIND_PACKAGE(Qt4 REQUIRED)
 #     /opt/local/lib
 #   )
   # IF(APPLE)
-    SET(CMAKE_CXX_FLAGS "-std=c++11 -O3 -msse4 -stdlib=libc++")#" -ObjC++ -fPIC -fno-strict-aliasing -D__PLACEMENT_NEW_INLINE -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo")
+    SET(CMAKE_CXX_FLAGS "-std=c++11 -O3 -msse4 -stdlib=libc++")
     ADD_DEFINITIONS(-D_MACOSX)
 #   ELSE()
 #     SET(CMAKE_CXX_FLAGS "-std=c++11 -O3 -msse4")
@@ -42,18 +42,14 @@ FIND_PACKAGE(Qt4 REQUIRED)
 
 FILE(GLOB pattern_viewer_src
 	./src/main.cpp
-  ./src/UI/*.h
   ./src/UI/*.cpp
 )
-
-
 
 # linker settings
 ADD_EXECUTABLE(PatternViewer
   ${pattern_viewer_src})
 FIND_LIBRARY(SQLITE3_LIB sqlite3)
 TARGET_LINK_LIBRARIES(PatternViewer
-  # learnquad
   ${SQLITE3_LIB}
   Qt4::QtGui
   Qt4::QtCore
