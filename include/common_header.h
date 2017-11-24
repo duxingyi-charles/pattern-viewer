@@ -2,7 +2,7 @@
 #define COMMON_HEADER_H
 
 
-#include <LearningQuadrangulationsCore/learning_quadrangulations.h>
+#include <learning_quadrangulations.h>
 
 using vcg::tri::pl::PatchDBServer;
 
