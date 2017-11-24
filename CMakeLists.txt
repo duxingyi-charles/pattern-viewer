@@ -44,7 +44,7 @@ FIND_PACKAGE(Qt4 REQUIRED)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP)
 INCLUDE_DIRECTORIES(${sketch_retopo_dir}/src/LearningQuadrangulationsCore/SCIP/soplex)
-# INCLUDE_DIRECTORIES(../vcglib)
+
 FILE(GLOB pattern_viewer_src
 	./src/main.cpp
   ./src/UI/*.h
