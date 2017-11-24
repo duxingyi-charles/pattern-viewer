@@ -9,7 +9,7 @@ This is a viewer for the quadrangulation patterns in the database provided with 
 Patterns can be browsed by the number of sides and their id in the database. A simplified pattern is shown if further polychord collapses are possible for the original pattern. Polychord expansions are also demonstrated by changing the width of independent polychords.
 
 # Screenshot
-![screenshot](https://github.com/dohoney/pattern-viewer/master/resources/screenshot.png)
+![screenshot](https://github.com/dohoney/pattern-viewer/raw/master/resources/screenshot.png)
 
 # Usage
 The pattern database is a part of the Sketch Retopo software, which is available at the [official site](http://igl.ethz.ch/projects/sketch-retopo/sketch-retopo-license.html).
