@@ -14,7 +14,7 @@ This program is mainly based on the Sketch Retopo software. You need to agree to
 <img width="606" height="472" src="https://github.com/dohoney/pattern-viewer/raw/master/resources/screenshot.png">
 
 # Usage
-First download the pattern database from the [official site](http://igl.ethz.ch/projects/ddq/).
+First download the pattern database from the [project page](http://vcg.isti.cnr.it/Publications/2015/MTPPSPC15/).
 
 Install the prerequisites ``qt4`` and ``sqlite3`` and then compile using CMake.
 
